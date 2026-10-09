@@ -25,7 +25,7 @@
   "parent": "0",
   "author": "Szilard",
   "date": "2014-12-05T07:33:43",
-  "html": "<p>Thanks Jan for pointing this out. AFAIK datatable.auto.index=TRUE applies only for DT[col==\"val\"] type of filtering and I do not have such in the benchmark (the filtering I have is of this form: dt[x&amp;gt;=10 &amp;amp; x&amp;lt;20]).</p>"
+  "html": "<p>Thanks Jan for pointing this out. AFAIK datatable.auto.index=TRUE applies only for DT[col==\"val\"] type of filtering and I do not have such in the benchmark (the filtering I have is of this form: dt[x&gt;=10 &amp; x&lt;20]).</p>"
  },
  {
   "id": "16699",
@@ -39,6 +39,6 @@
   "parent": "16699",
   "author": "Szilard",
   "date": "2014-12-05T13:44:53",
-  "html": "<p>Well, notice I use *single* column filter dt[x&amp;gt;=10 &amp;amp; x&amp;lt;20] (only 1 column &amp;quot;x&amp;quot;). And it&amp;#039;s a range query 10&amp;lt;=x&amp;lt;20, so data.table wouldn&amp;#039;t use an index even if it existed.</p>"
+  "html": "<p>Well, notice I use *single* column filter dt[x&gt;=10 &amp; x&lt;20] (only 1 column \"x\"). And it's a range query 10&lt;=x&lt;20, so data.table wouldn't use an index even if it existed.</p>"
  }
 ]

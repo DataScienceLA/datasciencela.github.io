@@ -464,7 +464,8 @@ def front_matter(item, authors, featured, hide_featured, wp_type):
 def convert_comments(item, bundle, ph, slugs):
     out = []
     for c in item['comments']:
-        text = html.escape(c['content'], quote=False) if '<' not in c['content'] else c['content']
+        # WordPress stores some comment text with entities already encoded (&amp;): decode once before escaping
+        text = html.escape(html.unescape(c['content']), quote=False) if '<' not in c['content'] else c['content']
         text = re.sub(r'(?<![="\'>/])\b(https?://[^\s<>"\']+[^\s<>"\'.,;:!?)\]])', r'<a href="\1">\1</a>', text)
         h = clean_html(wpautop(text), item['slug'], bundle, ph, slugs)
         body = BeautifulSoup(h, 'html.parser')
@@ -474,7 +475,8 @@ def convert_comments(item, bundle, ph, slugs):
         for a in body.find_all('a'):
             a['rel'] = 'nofollow ugc noopener'
         out.append(dict(id=c['id'], parent=c['parent'], author=html.unescape(c['author']).strip(),
-                        date=c['date'].replace(' ', 'T'), html=str(body).strip()))
+                        date=c['date'].replace(' ', 'T'),
+                        html=str(body).strip().replace('DSLALTX', '&lt;').replace('DSLAGTX', '&gt;')))
     return out
 
 

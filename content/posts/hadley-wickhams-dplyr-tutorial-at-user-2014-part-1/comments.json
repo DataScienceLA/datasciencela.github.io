@@ -60,14 +60,14 @@
   "parent": "0",
   "author": "Antonios Koutsourelis",
   "date": "2015-04-14T07:23:00",
-  "html": "<p>Thanks for the tutorial. I've been using dplyr for a long time now and it's extremely powerful for my daily R modelling and data manipulation processes!\r</p>\n<p>At the moment I'm interested in replacing \"for\" loops when possible, using dplyr package and the \"do\" command.<br/>\nI have the following script :\r</p>\n<p>## split initial dataset based on a grouping variable/column<br/>\n## and save each (new) dataset as a different .csv file\r</p>\n<p>data.frame(mtcars)  %&amp;gt;%<br/>\ngroup_by(cyl) %&amp;gt;%<br/>\ndo(d=data.frame(.)) %&amp;gt;%<br/>\ndo(write.csv(.$d, paste0(\"data_cyl_\",.$cyl,\".csv\")))\r</p>\n<p>Seems to work, as I can see the .csv files created in my workspace, but it also returns the following error: \r</p>\n<p>Error: Results are not data frames at positions: 1, 2, 3\r</p>\n<p>Any ideas or thoughts?\r</p>\n<p>PS: I can always use the lapply command with lists, but I'd like to see how I could use this approach....</p>"
+  "html": "<p>Thanks for the tutorial. I've been using dplyr for a long time now and it's extremely powerful for my daily R modelling and data manipulation processes!\r</p>\n<p>At the moment I'm interested in replacing \"for\" loops when possible, using dplyr package and the \"do\" command.<br/>\nI have the following script :\r</p>\n<p>## split initial dataset based on a grouping variable/column<br/>\n## and save each (new) dataset as a different .csv file\r</p>\n<p>data.frame(mtcars)  %&gt;%<br/>\ngroup_by(cyl) %&gt;%<br/>\ndo(d=data.frame(.)) %&gt;%<br/>\ndo(write.csv(.$d, paste0(\"data_cyl_\",.$cyl,\".csv\")))\r</p>\n<p>Seems to work, as I can see the .csv files created in my workspace, but it also returns the following error: \r</p>\n<p>Error: Results are not data frames at positions: 1, 2, 3\r</p>\n<p>Any ideas or thoughts?\r</p>\n<p>PS: I can always use the lapply command with lists, but I'd like to see how I could use this approach....</p>"
  },
  {
   "id": "47484",
   "parent": "47483",
   "author": "Szilard",
   "date": "2015-04-14T08:28:33",
-  "html": "<p>`do` needs named arguments ( <a href=\"http://blog.rstudio.org/2014/05/21/dplyr-0-2/\" rel=\"nofollow ugc noopener\">http://blog.rstudio.org/2014/05/21/dplyr-0-2/</a> ) and `cyl` in the filename needs to be 1-length:\r</p>\n<p>mtcars %&amp;gt;% group_by(cyl) %&amp;gt;%<br/>\n  do(dummy_name = write.csv(., paste0(\"data_cyl_\",unique(.$cyl),\".csv\")))</p>"
+  "html": "<p>`do` needs named arguments ( <a href=\"http://blog.rstudio.org/2014/05/21/dplyr-0-2/\" rel=\"nofollow ugc noopener\">http://blog.rstudio.org/2014/05/21/dplyr-0-2/</a> ) and `cyl` in the filename needs to be 1-length:\r</p>\n<p>mtcars %&gt;% group_by(cyl) %&gt;%<br/>\n  do(dummy_name = write.csv(., paste0(\"data_cyl_\",unique(.$cyl),\".csv\")))</p>"
  },
  {
   "id": "48579",
