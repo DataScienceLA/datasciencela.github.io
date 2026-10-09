@@ -1,0 +1,29 @@
+{{- /* Click-to-load YouTube embed: shows the thumbnail, loads the player (youtube-nocookie) only on click. */ -}}
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" | default "YouTube video" -}}
+{{- if eq (.Get "unavailable") "true" -}}
+<p class="yt-unavailable">This video is no longer available on YouTube (<a href="https://www.youtube.com/watch?v={{ $id }}">original link</a>).</p>
+{{- else -}}
+{{- $start := .Get "start" -}}
+<figure class="yt-lite" data-id="{{ $id }}"{{ with $start }} data-start="{{ . }}"{{ end }}>
+  <a class="yt-lite-btn" href="https://www.youtube.com/watch?v={{ $id }}{{ with $start }}&amp;t={{ . }}s{{ end }}" title="Play: {{ $title }}">
+    <img src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg" alt="{{ $title }}" loading="lazy" width="480" height="360">
+    <span class="yt-lite-play" aria-hidden="true"></span>
+  </a>
+  <figcaption>▶ {{ $title }}</figcaption>
+</figure>
+{{- if not (.Page.Store.Get "yt-lite-js") -}}
+{{- .Page.Store.Set "yt-lite-js" true }}
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('.yt-lite-btn'); if (!a) return;
+  e.preventDefault();
+  var f = a.parentNode, s = f.dataset.start, i = document.createElement('iframe');
+  i.src = 'https://www.youtube-nocookie.com/embed/' + f.dataset.id + '?autoplay=1' + (s ? '&start=' + s : '');
+  i.title = a.title; i.allowFullscreen = true;
+  i.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  a.replaceWith(i);
+});
+</script>
+{{- end -}}
+{{- end -}}

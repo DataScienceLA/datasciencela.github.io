@@ -1,0 +1,13 @@
+{{- /* Archived WordPress comments (read-only), from the page bundle's comments.json. */ -}}
+{{- with .Resources.Get "comments.json" -}}
+{{- $all := . | transform.Unmarshal -}}
+{{- $ids := slice -}}
+{{- range $all }}{{ $ids = $ids | append .id }}{{ end -}}
+<section class="dsla-comments" id="comments">
+  <h2>{{ len $all }} archived comment{{ if ne (len $all) 1 }}s{{ end }}</h2>
+  <p class="dsla-comments-note">Comments are closed. These were posted on the original site.</p>
+  {{- range where $all "parent" "not in" $ids }}
+  {{ partial "dsla-comment.html" (dict "c" . "all" $all) }}
+  {{- end }}
+</section>
+{{- end -}}

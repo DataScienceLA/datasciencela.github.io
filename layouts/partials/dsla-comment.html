@@ -1,0 +1,12 @@
+<article class="dsla-comment" id="comment-{{ .c.id }}">
+  <header>
+    <span class="dsla-comment-author">{{ .c.author }}</span>
+    <a class="dsla-comment-date" href="#comment-{{ .c.id }}"><time datetime="{{ .c.date }}">{{ (time .c.date).Format "January 2, 2006" }}</time></a>
+  </header>
+  <div class="dsla-comment-body">{{ .c.html | replaceRE `(href|src)="/([^/])` (printf `$1="%s$2` (relURL "")) | safeHTML }}</div>
+  {{- with where .all "parent" .c.id }}
+  <div class="dsla-comment-replies">
+    {{- range . }}{{ partial "dsla-comment.html" (dict "c" . "all" $.all) }}{{ end }}
+  </div>
+  {{- end }}
+</article>

@@ -1,0 +1,93 @@
+[
+ {
+  "id": "7",
+  "parent": "0",
+  "author": "Amelia McNamara",
+  "date": "2014-08-07T10:14:31",
+  "html": "<p>The thing I'm going to be mulling over from this video is the analogy Hadley made between EDA/confirmatory data analysis and exploratory programming versus unit tests. Seems like there is a natural distinction between the exploratory and the confirmatory.</p>"
+ },
+ {
+  "id": "10",
+  "parent": "7",
+  "author": "Eduardo",
+  "date": "2014-08-07T10:41:35",
+  "html": "<p>Agreed! His point was salient and hit me right between the eyes. I guess that's why he's Hadley, right? But the link made perfect sense and I definitely want to understand further what extensions could be added to modern unit testing frameworks that help leverage that analogy.</p>"
+ },
+ {
+  "id": "15",
+  "parent": "0",
+  "author": "Henrik",
+  "date": "2014-08-11T04:40:04",
+  "html": "<p>Nice work! That was an excellent interview.</p>"
+ },
+ {
+  "id": "16",
+  "parent": "0",
+  "author": "Mark van der Loo",
+  "date": "2014-08-11T08:21:45",
+  "html": "<p>Who is Kardashian?</p>"
+ },
+ {
+  "id": "17",
+  "parent": "15",
+  "author": "Eduardo",
+  "date": "2014-08-11T08:23:59",
+  "html": "<p>Thank you very much! It was a real pleasure to have the opportunity to have such a deep and intimate conversation with Hadley. The dude is a class act.</p>"
+ },
+ {
+  "id": "18",
+  "parent": "16",
+  "author": "Eduardo",
+  "date": "2014-08-11T08:25:34",
+  "html": "<p>Kim Kardashian is an American reality television star, model and spokesperson who has a net worth of $65 million. She is at the center of a pretty impressive business empire, ranging from fashion to video games.</p>"
+ },
+ {
+  "id": "19",
+  "parent": "0",
+  "author": "Stan",
+  "date": "2014-08-11T18:55:08",
+  "html": "<p>Great interview!  You're a natural if you can make that happen with only 24 hours to prep.</p>"
+ },
+ {
+  "id": "20",
+  "parent": "19",
+  "author": "Eduardo",
+  "date": "2014-08-11T21:35:29",
+  "html": "<p>Thanks very much! I'm quite flattered :) I genuinely had never even considered doing on-camera interviews, ever. I'm a computer programmer and have been for a very long time, so the idea never crossed my mind. I *knew* I was going to interview a few days before, but I basically started really planning the night before. It was a whole lot of fun, and I hope I get to do it again!</p>"
+ },
+ {
+  "id": "28",
+  "parent": "0",
+  "author": "Frank",
+  "date": "2014-08-14T09:36:18",
+  "html": "<p>Great interview! Informative, relaxed, and on target, everything I like to see in an interview. I also enjoyed the opening and closing with the 'r terminal' very clever. One bit of constructive feedback.. you may want to consider a tripod for the next video interview. The camera shaking made me a little nauseous at times.  Another option might be to release just the audio as a podcast. I rarely watch interview (because that requires sitting at my computer and staring, something I do enough of anyway) but love audio content.. because that I can consume while walking, driving, working out, et cetera.</p>"
+ },
+ {
+  "id": "29",
+  "parent": "28",
+  "author": "Eduardo",
+  "date": "2014-08-14T09:55:59",
+  "html": "<p>You read our minds! We are in the process of producing these videos as podcasts. I really appreciate your comments and feedback, we will take them to heart going forward with future efforts! The next few months of videos were all recorded at the same time, so they were all shot in the same style, so if it caused you discomfort, I suggest you enjoy our lovely podcast until such time as we start recording new ones :) Cheers!</p>"
+ },
+ {
+  "id": "34",
+  "parent": "28",
+  "author": "Eduardo Ariño de la Rubia",
+  "date": "2014-08-18T11:39:17",
+  "html": "<p>The podcast was just announced! <a href=\"/announcing-the-dsla-podcast/\" rel=\"nofollow ugc noopener\">http://datascience.la/announcing-the-dsla-podcast/</a> enjoy!</p>"
+ },
+ {
+  "id": "49",
+  "parent": "0",
+  "author": "Daniel Gutierrez",
+  "date": "2014-08-25T19:00:54",
+  "html": "<p>Eduardo, I've been very impressed with all your useR!2014 interviews. For each, you exhibit so much depth in the subject that I believe it serves to make the person being interviewed more relaxed, like he/she's just chatting with a colleague, and as a result the content is much more compelling. Good job.</p>"
+ },
+ {
+  "id": "50",
+  "parent": "49",
+  "author": "Eduardo Ariño de la Rubia",
+  "date": "2014-08-25T19:09:10",
+  "html": "<p>Thank you very much! That means a lot coming from you :)</p>"
+ }
+]

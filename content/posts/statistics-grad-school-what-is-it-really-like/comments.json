@@ -1,0 +1,51 @@
+[
+ {
+  "id": "9",
+  "parent": "0",
+  "author": "lee richardson",
+  "date": "2014-08-07T10:15:14",
+  "html": "<p>Nice post! BTW I stole you're CV template from your website</p>"
+ },
+ {
+  "id": "12",
+  "parent": "9",
+  "author": "Amelia McNamara",
+  "date": "2014-08-07T13:08:29",
+  "html": "<p>Thanks! And that's what the code is there for. <a href=\"http://www.treyhunner.com/\" rel=\"nofollow ugc noopener\">Trey Hunner</a> deserves most of the credit, but maybe I'll do a blog post-- \"TeXing your CV-- is it worth it?\"</p>"
+ },
+ {
+  "id": "293",
+  "parent": "0",
+  "author": "Daniel",
+  "date": "2014-09-02T18:01:18",
+  "html": "<p>Amelia, I really enjoyed your post about your experiences in grad school!</p>"
+ },
+ {
+  "id": "47137",
+  "parent": "0",
+  "author": "Reza",
+  "date": "2015-04-09T13:32:53",
+  "html": "<p>Thank you for your information.I really enjo4 your posts.I am holding Ms in applied mathematics(numerical analysis) and my Bs was In physics(from Iran).I am working as math faculty in college right now.I am very interested to data science.I was wondering if you recommend the ucla ms or phd stat program.Do you think , it's better for me to get the master or directly apply for phd? I alsp wants tp know about the stipend amount.Thank you</p>"
+ },
+ {
+  "id": "47164",
+  "parent": "47137",
+  "author": "Amelia McNamara",
+  "date": "2015-04-09T16:22:45",
+  "html": "<p>If you have a strong math background, I think that going directly for the PhD could be fine. But it depends on where your data science interests lie-- if you want to continue in academia with data science, the PhD makes sense. But if you're more interested in industry, I think a Masters is fine. For more about how I paid for grad school, see my other post-- <a href=\"/paying-for-statistics-grad-school-aka-the/\" rel=\"nofollow ugc noopener\">http://datascience.la/paying-for-statistics-grad-school-aka-the/</a> Between GSRing and TAing I've been able to live on my support.</p>"
+ },
+ {
+  "id": "84382",
+  "parent": "0",
+  "author": "Cristobal Valenzuela Musura",
+  "date": "2018-01-21T00:02:24",
+  "html": "<p>I loved this. I'm from another country and I'm interested in getting a PhD in Statistics in UCLA, but how difficult is it to get accepted?</p>"
+ },
+ {
+  "id": "84411",
+  "parent": "84382",
+  "author": "Amelia McNamara",
+  "date": "2018-01-22T10:57:55",
+  "html": "<p>I don't know specifically, you may want to reach out to a professor there or the student affairs officer. From my anecdotal experience, many PhD students there are international students.</p>"
+ }
+]

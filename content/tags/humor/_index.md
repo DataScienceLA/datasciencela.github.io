@@ -1,0 +1,4 @@
+---
+title: "humor"
+slug: "humor"
+---

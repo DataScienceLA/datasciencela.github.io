@@ -1,0 +1,4 @@
+<blockquote class="tweet-archive">
+  {{ .Inner | strings.TrimSpace | .Page.RenderString }}
+  <footer>— {{ .Get "author" }} · <a href="{{ .Get "url" }}">{{ .Get "date" }}</a> <span class="tweet-archive-note">(archived tweet)</span></footer>
+</blockquote>

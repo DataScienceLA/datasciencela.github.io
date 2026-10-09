@@ -1,0 +1,10 @@
+{{- /* Root-relative links (/slug/, as written by the WordPress converter) resolve against baseURL,
+       so the site also works when served from a sub-path. Bundle files resolve to their permalink. */ -}}
+{{- $u := .Destination -}}
+{{- if and (strings.HasPrefix $u "/") (not (strings.HasPrefix $u "//")) -}}
+  {{- $u = relURL (strings.TrimPrefix "/" $u) -}}
+{{- else if and $u (not (strings.Contains $u ":")) (not (strings.HasPrefix $u "#")) -}}
+  {{- with .PageInner.Resources.Get (strings.TrimPrefix "./" $u) }}{{ $u = .RelPermalink }}{{ end -}}
+{{- end -}}
+<a href="{{ $u | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /* trim */ -}}

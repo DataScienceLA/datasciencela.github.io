@@ -1,0 +1,9 @@
+[
+ {
+  "id": "113001",
+  "parent": "0",
+  "author": "Scott Edwards",
+  "date": "2021-01-12T10:44:18",
+  "html": "<p>Congrats on winning that bet, Szilard!  This was a great talk, James!  I've been enjoying exploring Dask on Saturn Cloud - it's a great alternative to Spark.  RAPIDS AI is interesting too -- and has Dask as well -- but not pure open source since NVIDIA is proprietary code.</p>"
+ }
+]

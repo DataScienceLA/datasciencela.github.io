@@ -1,0 +1,16 @@
+[
+ {
+  "id": "50207",
+  "parent": "0",
+  "author": "stephanie",
+  "date": "2015-06-22T11:14:37",
+  "html": "<p>Hey, thank you for this very interesting post. I am quite new with R programming but I know about dply that I find very userfriendly. When I read your post, I understand that it is now possible to do all the data management inside R without any SGDB like mysql or others. However, I have a 7GB dataset (lot smaller than the example of 100GB you evoke) that I struggle to load in a R, whatever the package : data.table, ff, sqldf. Is this because I have a 4GB RAM computer and need to have at least as much RAM than the size of my data for handling the data management with R ? Am I stuck to use SGDB and R connectors at this point ? If so, would you recommend one in particuliar given your own experience ? Thank you so much for your help, I find it really difficult to get some clear information about all this stuff on the internet. Best.</p>"
+ },
+ {
+  "id": "50208",
+  "parent": "0",
+  "author": "Szilard",
+  "date": "2015-06-22T11:23:35",
+  "html": "<p>Hi Stephanie: I would use a machine with more RAM, e.g. you can use the cloud (e.g. up to 250GB RAM machines for $2/hr).</p>"
+ }
+]

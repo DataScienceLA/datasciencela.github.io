@@ -1,0 +1,58 @@
+[
+ {
+  "id": "58992",
+  "parent": "0",
+  "author": "jangorecki",
+  "date": "2015-10-30T04:10:29",
+  "html": "<p>Hi, you should find sqlite useful in terms of speed. The problem here is likely to be JDBC which is very slow. Cloudera should provide better drivers like most of the db vendors. Maybe they already did but nobody wraps it into package?</p>"
+ },
+ {
+  "id": "58999",
+  "parent": "0",
+  "author": "bwilson",
+  "date": "2015-10-30T09:24:11",
+  "html": "<p>I have adopted dplyrimpaladb for my impala - R connections.  <a href=\"https://github.com/piersharding/dplyrimpaladb\" rel=\"nofollow ugc noopener\">https://github.com/piersharding/dplyrimpaladb</a><br/>\nWould be interesting to see another comparison with this package. Thanks for the detailed info!</p>"
+ },
+ {
+  "id": "59000",
+  "parent": "0",
+  "author": "bwil",
+  "date": "2015-10-30T09:41:55",
+  "html": "<p>I have adopted dplyrimpaladb for my Impala - R connection. Would be interesting to see where that lies on your 'Second Thoughts' graph.</p>"
+ },
+ {
+  "id": "59001",
+  "parent": "58999",
+  "author": "Gergely Daroczi",
+  "date": "2015-10-30T11:00:27",
+  "html": "<p>This is a great idea and addition to the post, thank you! Although I am pretty sure that the performance is very similar to the RJDBC package, as this dplyr backend uses that as well -- see at <a href=\"https://github.com/piersharding/dplyrimpaladb/blob/master/R/src-impaladb.r#L238\" rel=\"nofollow ugc noopener\">https://github.com/piersharding/dplyrimpaladb/blob/master/R/src-impaladb.r#L238</a> </p>\n<p>But I will update the second benchmark with some related empirical test results in the next few days. Thanks again!</p>"
+ },
+ {
+  "id": "59002",
+  "parent": "58992",
+  "author": "Gergely Daroczi",
+  "date": "2015-10-30T11:06:20",
+  "html": "<p>Thanks for you comment, Jan! While I agree that sqlite is a very useful tool, I think it has very different purposes compared to Impala, which latter is to be run on a cluster of machines to store large amount of data, and with the ability to serve multiple remote clients. If using a local data storage fitting in the psychical memory, I'd go with data.table inside of R :) Matt has a very cool video on this at <a href=\"https://www.youtube.com/watch?v=rvT8XThGA8o\" rel=\"nofollow ugc noopener\">https://www.youtube.com/watch?v=rvT8XThGA8o</a></p>"
+ },
+ {
+  "id": "59553",
+  "parent": "0",
+  "author": "Austin Chungath",
+  "date": "2015-11-12T08:22:48",
+  "html": "<p>Hi Gergely,\r</p>\n<p>Thanks for getting in touch with me. This is a brilliant blog post that you have got here. I guess the flaw in my approach is that I am converting the RJDBC result to matching R datatypes and that takes time. In my use case we didn't require to retrieve large datasets back to R as we intended the bulk of the operations to be done on the cluster in Impala. I can probably add an option to the rimpala function call which will allow fetching RJDBC result set as such and let the user convert as required to R datatypes. I probably shouldn't do drastic changes to maintain backwards compatibility. \r</p>\n<p>Warm Regards,<br/>\nAustin</p>"
+ },
+ {
+  "id": "59584",
+  "parent": "59553",
+  "author": "Gergely Daroczi",
+  "date": "2015-11-13T12:13:54",
+  "html": "<p>Austin, thank you very much for your kind and prompt reply, also for working on RImpala -- your hard work is much appreciated.  I paste here the related GH ticket so that anyone can easily find and follow the future udpates: <a href=\"https://github.com/Mu-Sigma/RImpala/issues/8\" rel=\"nofollow ugc noopener\">https://github.com/Mu-Sigma/RImpala/issues/8</a></p>"
+ },
+ {
+  "id": "59654",
+  "parent": "0",
+  "author": "Matvey Bossis",
+  "date": "2015-11-15T01:23:29",
+  "html": "<p>I suspected smth like this, with RImpala! Many thanks!</p>"
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "id": "8",
+  "parent": "0",
+  "author": "Matt",
+  "date": "2014-08-07T10:14:44",
+  "html": "<p>I love maps too! Do you do all your mapping in R? I've used R to mine data, but then I usually map projects in qGIS.</p>"
+ },
+ {
+  "id": "11",
+  "parent": "8",
+  "author": "Eduardo",
+  "date": "2014-08-07T10:42:44",
+  "html": "<p>I don't usually do mapping very professionally, it really is something I do for fun or as part of a knitR workflow. However, now that I've started to look at qGIS, I can see that this addiction could get a lot deeper :)</p>"
+ },
+ {
+  "id": "13",
+  "parent": "0",
+  "author": "Kevin Wright",
+  "date": "2014-08-07T14:37:01",
+  "html": "<p>Wyoming should be red.  Because of the Republican party.  That would be funnier.</p>"
+ },
+ {
+  "id": "14",
+  "parent": "13",
+  "author": "Eduardo",
+  "date": "2014-08-09T11:17:21",
+  "html": "<p>lol! i know. i didn't want to be political and instead went for a more absurd joke. You are, of course, more than welcome to repost a better version of this joke wherever you wish :)</p>"
+ }
+]

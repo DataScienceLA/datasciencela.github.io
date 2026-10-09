@@ -1,0 +1,6 @@
+<figure class="sd-embed">
+  <div class="sd-frame" style="aspect-ratio: {{ .Get "ratio" | default "4/3" | safeCSS }}">
+    <iframe src="https://speakerdeck.com/player/{{ .Get "id" }}" title="{{ .Get "title" }}" loading="lazy" allowfullscreen></iframe>
+  </div>
+  <figcaption><a href="{{ .Get "url" }}">{{ .Get "title" | default "Slides" }}</a> · Speaker Deck</figcaption>
+</figure>

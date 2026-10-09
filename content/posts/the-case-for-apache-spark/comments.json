@@ -1,0 +1,23 @@
+[
+ {
+  "id": "3927",
+  "parent": "0",
+  "author": "william.lee",
+  "date": "2014-10-22T18:02:56",
+  "html": "<p>Can R run on Spark?</p>"
+ },
+ {
+  "id": "4023",
+  "parent": "0",
+  "author": "Subash D'Souza",
+  "date": "2014-10-23T11:10:16",
+  "html": "<p>Yes, there is an experimental project from the guys at amplab, the creators of Spark called Spark R. Its still a work in progress.\r</p>\n<p><a href=\"http://amplab-extras.github.io/SparkR-pkg/\" rel=\"nofollow ugc noopener\">http://amplab-extras.github.io/SparkR-pkg/</a></p>"
+ },
+ {
+  "id": "34685",
+  "parent": "0",
+  "author": "Kyle Polich",
+  "date": "2015-03-08T20:45:30",
+  "html": "<p>It was announced at Strata that Spark 1.4 (coming later this year) will add support for R.</p>"
+ }
+]

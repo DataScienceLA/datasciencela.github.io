@@ -1,0 +1,4 @@
+---
+title: "emacs"
+slug: "emacs"
+---

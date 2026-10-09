@@ -1,0 +1,4 @@
+---
+title: "Education"
+slug: "education"
+---

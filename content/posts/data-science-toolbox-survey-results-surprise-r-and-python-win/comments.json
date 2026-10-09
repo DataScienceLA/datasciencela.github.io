@@ -1,0 +1,9 @@
+[
+ {
+  "id": "48715",
+  "parent": "0",
+  "author": "Rosaria",
+  "date": "2015-05-11T23:01:38",
+  "html": "<p>I use KNIME for data manipulation and machine learning, Hadoop for data manipulation if KNIME is too slow, and R sometimes for exotic algorithms.</p>"
+ }
+]

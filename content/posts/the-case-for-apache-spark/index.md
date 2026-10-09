@@ -1,0 +1,23 @@
+---
+title: "The case for Apache Spark"
+date: 2014-09-23T10:00:05
+lastmod: 2014-09-23T10:04:42
+slug: "the-case-for-apache-spark"
+authors: ["subash-dsouza"]
+categories: ["meetups", "random"]
+tags: ["meetups-2", "spark", "hadoop"]
+description: "Security and real-time analytics are two concerns with Hadoop which both affect real-time processing and reporting. Could Spark solve these problems?"
+archivedComments: 3
+showComments: true
+wpID: 346
+---
+
+I have been following Big Data, [Hadoop](http://hadoop.apache.org/) in particular, for the past four years and a lot has changed since then. At the time I was looking for the next big wave of technologies, especially on the back end of development as that was my forte at the time. After our initial introduction, the more I learned the more I felt Hadoop was the right tool to get the job done. Focusing upon the development aspects of job vs actual maintenance of the servers/cluster has always been a no-brainer for me. Now that Hadoop has been adopted by a wide variety of industries and has grown quite popular, it has become much more apparent that there are indeed areas where Hadoop is lacking. Security and real-time analytics are two of these concerns which both affect real-time processing and reporting, but fortunately there is a lot of current work happening to address these limitations. Consequently, there is a group of big data vendors who are investing a large number of resources as a remedy, bringing us newer tools such as [Yarn](http://hadoop.apache.org/docs/r2.5.1/hadoop-yarn/hadoop-yarn-site/YARN.html), [Tez](http://hortonworks.com/hadoop/tez/), [Storm](http://hortonworks.com/hadoop/storm/), etc. Also, acquisitions of [XA Secure](http://hortonworks.com/press-releases/hortonworks-acquires-xa-secure/) by Hortonworks and [Gazzang](http://www.cloudera.com/content/cloudera/en/about/press-center/press-releases/2014/06/03/cloudera-strengthens-hadoop-security-with-acquisition-of-gazzang.html) by Cloudera are contributing to the solving these issues around security.
+
+Within Hadoop, Mapreduce has always been a focal point since it is involved in the majority of data processing. There is a fundamental idea, however, that there could be something even better than Mapreduce, especially in terms of better performance and optimizations. There has even been recent talk of [Mapreduce going away](http://www.informationweek.com/cloud/software-as-a-service/google-i-o-hello-dataflow-goodbye-mapreduce/d/d-id/1278917). Perhaps this is true, but maybe not. From my perspective, people will always take a look at tools that will claim to deliver the [golden unicorn](http://www.informationweek.com/big-data/big-data-analytics/will-spark-google-dataflow-steal-hadoops-thunder/a/d-id/1278959) but the question remains of whether these new tools will stay in the spotlight over time.
+
+By no means am I saying Spark is indeed this unicorn we’ve all been waiting for to solve these problems with Hadoop - but it certainly has a lot of promise. Spark supports [in-memory data sharing across DAGs (Directed Acyclic Graphs)](http://vision.cloudera.com/mapreduce-spark/#sthash.l0S6LlfE.dpuf), so that different jobs can work with the same data at very high speed. It even allows for cyclic data flows. In addition to Spark itself, it also offers tools such as Spark SQL, Spark Streaming, MLib (for machine learning) and GraphX. For these and many other reasons, I believe Spark is the part of every developer’s/admin’s toolset which will make real time processing in Hadoop more possible, an exciting prospect indeed.
+
+As a Big data evangelist, part of my job is to understand how the big data market shifts with time. Considering that most major vendors are on board with Spark (e.g. Cloudera, MapR, Datastax, Pivotal & Hortonworks) there is less uncertainty as to whether Spark will remain popular or whether it is a fad that will pass with time. In my view, I truly believe that Spark is on the same upward trajectory that Hadoop was following 4-5 years ago. There is a great blog post explaining [Spark’s advantages and drawbacks](https://haifengl.wordpress.com/2014/08/18/big-data-analytics-spark/), which I feel you should read for just this reason, in case you haven’t read it yet.
+
+Considering this case for Spark, are you interested in learning more? Come take a look at the [Spark Panel meetup](http://www.meetup.com/Los-Angeles-Apache-Spark-Users-Group/events/197767002/) on September 30th. We have also recently added a [getting started with Spark & Scala session](http://www.meetup.com/Los-Angeles-Apache-Spark-Users-Group/events/207973922/) on November 18th. Hope to see you there!

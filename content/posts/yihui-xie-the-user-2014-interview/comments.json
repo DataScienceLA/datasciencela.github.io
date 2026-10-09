@@ -1,0 +1,23 @@
+[
+ {
+  "id": "194",
+  "parent": "0",
+  "author": "Yihui Xie",
+  "date": "2014-09-01T11:47:59",
+  "html": "<p>Big thanks to the DataScienceLA team for the hard work! It was my great honor to be interviewed at useR! 2014. This blog post has accurately summarized what I was thinking about. Nice job!\r</p>\n<p>This was my first ever video interview. As a shy person, fortunately I did not blush or tremble, but I'm a little bit annoyed by my endless mmhmm's during the conversation :) Next time I will try to stay quiet while the other person is talking.</p>"
+ },
+ {
+  "id": "217",
+  "parent": "194",
+  "author": "Laurent",
+  "date": "2014-09-01T17:01:04",
+  "html": "<p>Great interview, Yihui, thanks! And don't worry about mmhmm'ing; people appreciate honesty, dedication and honesty, that's what makes a difference.</p>"
+ },
+ {
+  "id": "263",
+  "parent": "194",
+  "author": "Eduardo Ariño de la Rubia",
+  "date": "2014-09-02T10:35:49",
+  "html": "<p>You know, I feel bad that I interrupted you when we were talking about the animate package! I just got so excited :) I wish I would have let you keep answering!</p>"
+ }
+]

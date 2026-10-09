@@ -1,0 +1,16 @@
+[
+ {
+  "id": "78586",
+  "parent": "0",
+  "author": "Alecco",
+  "date": "2017-02-20T12:14:51",
+  "html": "<p>Indexing takes a lot of space in RAM. Around 2x - 4x.\r</p>\n<p>For ML there are internal data structures taking a lot of space, too. Decision trees are used a lot in by Quants and need much more space than the data.</p>"
+ },
+ {
+  "id": "91136",
+  "parent": "0",
+  "author": "J",
+  "date": "2018-11-09T17:51:04",
+  "html": "<p>Now that TB instance s of RAM are available on AWS do you know of anyone running a ML program(python,Scala,Java) with this kind of memory ?</p>"
+ }
+]

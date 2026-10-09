@@ -1,0 +1,51 @@
+[
+ {
+  "id": "61225",
+  "parent": "0",
+  "author": "Jack",
+  "date": "2015-12-22T16:27:33",
+  "html": "<p>How much was the funding? About $30.000?</p>"
+ },
+ {
+  "id": "61226",
+  "parent": "0",
+  "author": "Jack",
+  "date": "2015-12-22T16:28:27",
+  "html": "<p>LA is very expensive.</p>"
+ },
+ {
+  "id": "61235",
+  "parent": "0",
+  "author": "Jiageng",
+  "date": "2015-12-23T00:22:52",
+  "html": "<p>Hi Amelia! I'm an Applied Mathematics student at UCLA and I really enjoy reading your series of posts. I was wondering whether you would mind writing another one on your research project, by any chance?</p>"
+ },
+ {
+  "id": "61249",
+  "parent": "61225",
+  "author": "Amelia McNamara",
+  "date": "2015-12-23T10:45:43",
+  "html": "<p>Depends on how you count it. If you include my tuition + health insurance + stipend, I think closer to 50k. But just the stipend I think is about 30k.</p>"
+ },
+ {
+  "id": "61250",
+  "parent": "61226",
+  "author": "Amelia McNamara",
+  "date": "2015-12-23T10:46:40",
+  "html": "<p>You speak the truth.</p>"
+ },
+ {
+  "id": "61251",
+  "parent": "61235",
+  "author": "Amelia McNamara",
+  "date": "2015-12-23T10:48:33",
+  "html": "<p>Now that I'm a visiting assistant professor at Smith, I haven't been blogging as much. But, you might be interested in my dissertation (<a href=\"http://www.science.smith.edu/~amcnamara/dissertation.html\" rel=\"nofollow ugc noopener\">http://www.science.smith.edu/~amcnamara/dissertation.html</a>) or this page with thoughts on the future of statistical programming (<a href=\"http://www.science.smith.edu/~amcnamara/FoSP.html\" rel=\"nofollow ugc noopener\">http://www.science.smith.edu/~amcnamara/FoSP.html</a>). Thanks for your interest!</p>"
+ },
+ {
+  "id": "61305",
+  "parent": "0",
+  "author": "Jack",
+  "date": "2015-12-25T12:02:46",
+  "html": "<p>Amelia,\r</p>\n<p>You could write about the job market for statisticians.<br/>\nHow is the is statistics job market? How does it work?<br/>\nHow much does a statistics professor make? Does that change much from school to school?<br/>\nSince you are working now, it doesn't have to be a big post. I am sure a post like that would help a lot of people.\r</p>\n<p>Best.</p>"
+ }
+]

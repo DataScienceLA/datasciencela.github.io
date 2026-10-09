@@ -1,0 +1,4 @@
+---
+title: "blaze"
+slug: "blaze"
+---

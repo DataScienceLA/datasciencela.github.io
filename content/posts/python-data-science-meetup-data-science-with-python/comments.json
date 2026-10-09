@@ -1,0 +1,16 @@
+[
+ {
+  "id": "3437",
+  "parent": "0",
+  "author": "Marcel Milcent",
+  "date": "2014-10-18T12:55:55",
+  "html": "<p>Great initiative!<br/>\nWill there be any videos of the meetup, so that non-US people like me could grab a little knowledge?<br/>\nPS: in need of python-based data science course. Apreciate any tip.<br/>\nThanks</p>"
+ },
+ {
+  "id": "3588",
+  "parent": "0",
+  "author": "Szilard",
+  "date": "2014-10-19T20:33:36",
+  "html": "<p>Hi Marcel! \r</p>\n<p>I think you are lucky on this one as one of our great volunteers Jeff Weakley is planing to make a video recording and in that case we'll publish the video and slides here on DataScience.LA.\r</p>\n<p>On the other hand we are all volunteers and have limited time, so we cannot promise we'll be recording all meetups (and in some cases the companies presenting ask us not to make any recordings).</p>"
+ }
+]

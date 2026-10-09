@@ -1,0 +1,130 @@
+baseURL = "https://datasciencela.github.io/"
+title = "DataScience.LA"
+theme = "blowfish"
+locale = "en-us"
+defaultContentLanguage = "en"
+timeZone = "America/Los_Angeles"
+enableRobotsTXT = true
+summaryLength = 40
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+
+# Keep the original WordPress URLs. Author pages live at /authors/<slug>/ because Blowfish
+# links there; each author page carries an alias for the WordPress /author/<slug>/ URL.
+[permalinks.page]
+  posts = "/:slug/"
+[permalinks.term]
+  categories = "/category/:slug/"
+  tags = "/tag/:slug/"
+  authors = "/authors/:slug/"
+
+[pagination]
+  pagerSize = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true  # converted WordPress content contains a little inline HTML
+[markup.goldmark.parser.attribute]
+  title = true
+[markup.highlight]
+  noClasses = false
+
+[related]
+  includeNewer = true
+  threshold = 60
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+  [[related.indices]]
+    name = "authors"
+    weight = 20
+
+[params]
+  description = "Archive of DataScience.LA (2014–2021): talks, interviews and posts from the Los Angeles data science community."
+  copyright = "DataScience.LA, 2014–2021 · Read-only archive: comments are closed."
+  mainSections = ["posts"]
+  logo = "img/logo.png"
+  disableTextInHeader = true
+  colorScheme = "ocean"
+  defaultAppearance = "light"
+  autoSwitchAppearance = true
+  enableSearch = true
+  enableCodeCopy = true
+
+  [params.header]
+    layout = "fixed-fill-blur"
+
+  [params.footer]
+    showMenu = true
+    showCopyright = true
+    showThemeAttribution = true
+    showAppearanceSwitcher = true
+    showScrollToTop = true
+
+  [params.homepage]
+    layout = "page"
+    showRecent = true
+    showRecentItems = 9
+    showMoreLink = true
+    showMoreLinkDest = "posts/"
+    cardView = true
+
+  [params.article]
+    showHero = true
+    heroStyle = "big"
+    showDate = true
+    showDateUpdated = false
+    showAuthor = true
+    showTaxonomies = true
+    showReadingTime = true
+    showWordCount = false
+    showPagination = true
+    showRelatedContent = true
+    relatedContentLimit = 3
+    showHeadingAnchors = true
+    showTableOfContents = false
+
+  [params.list]
+    showCards = true
+    cardView = true
+    groupByYear = true
+    showSummary = true
+
+  [params.taxonomy]
+    showTermCount = true
+
+  [params.term]
+    groupByYear = true
+    cardView = true
+    showTableOfContents = false
+
+[[menus.main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 1
+[[menus.main]]
+  name = "Categories"
+  pageRef = "categories"
+  weight = 2
+[[menus.main]]
+  name = "Authors"
+  pageRef = "authors"
+  weight = 3
+[[menus.main]]
+  name = "Team"
+  pageRef = "/team"
+  weight = 4
+
+[[menus.footer]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 1

@@ -1,0 +1,107 @@
+[
+ {
+  "id": "25725",
+  "parent": "0",
+  "author": "Alex",
+  "date": "2015-01-12T14:57:30",
+  "html": "<p>Instead of manually constructing a blacklist, you should investigate the existing ways of sanitising input. With RPostgreSQL you can use postgresqlExecStatement which gives you the functionality of prepared statements.\r</p>\n<p>See <a href=\"http://stackoverflow.com/questions/19694479/rpostgresql-properly-escaping-strings-for-input\" rel=\"nofollow ugc noopener\">http://stackoverflow.com/questions/19694479/rpostgresql-properly-escaping-strings-for-input</a> or similar on stackoverflow.</p>"
+ },
+ {
+  "id": "25726",
+  "parent": "25725",
+  "author": "Alex",
+  "date": "2015-01-12T15:05:38",
+  "html": "<p>With RMySQL I would consider using the dplyr package to select data from a database table. This question also suggests that dbEscapeStrings might work for RMySQL:\r</p>\n<p><a href=\"http://stackoverflow.com/questions/25049296/sql-insertion-protection-using-rmysql\" rel=\"nofollow ugc noopener\">http://stackoverflow.com/questions/25049296/sql-insertion-protection-using-rmysql</a></p>"
+ },
+ {
+  "id": "25829",
+  "parent": "25725",
+  "author": "Szilard",
+  "date": "2015-01-12T21:57:01",
+  "html": "<p>In the post I discussed the various alternatives such as checking inputs and raising errors, whitelists and blacklists, sanitizing inputs, prepared statements etc. Indeed, it seems if you are using PostgreSQL, you can use prepared statements, although the <a href=\"http://cran.r-project.org/web/packages/RPostgreSQL/NEWS\" rel=\"nofollow ugc noopener\">NEWS</a> says it's a \"Initial implementation of prepared statements\". Maybe someone who has experience with RPostgreSQL can weigh in about how mature/usable that feature is.</p>"
+ },
+ {
+  "id": "25835",
+  "parent": "25726",
+  "author": "Szilard",
+  "date": "2015-01-12T22:04:42",
+  "html": "<p>As I wrote in the post dplyr is doing some basic escaping, but mainly to prevent accidental misuse, not a targeted attack. As for RMySQL, dbEscapeStrings is essentially the same as the mysqlEscapeStrings function discussed in the post.</p>"
+ },
+ {
+  "id": "25863",
+  "parent": "0",
+  "author": "Steph Locke",
+  "date": "2015-01-13T01:09:30",
+  "html": "<p>You may also want to check out RODBCext - you can still use your MySQL backend (via RODBC) but it allows you to do parameterized SQL queries with sanitised inputs thus preventing SQL injection attacks. Also, big upside about it is it allows you to pass it a data.frame of values for a vectorised INSERT.\r</p>\n<p><a href=\"http://cran.r-project.org/web/packages/RODBCext/\" rel=\"nofollow ugc noopener\">http://cran.r-project.org/web/packages/RODBCext/</a></p>"
+ },
+ {
+  "id": "25917",
+  "parent": "0",
+  "author": "Tim",
+  "date": "2015-01-13T07:36:07",
+  "html": "<p>The \"rpg\" package on CRAN allows parameterized queries (eg \"select * from x where y = $1\") against postgresql. No need to sanitize inputs. This simply uses what is available in libpq, so it is mature and robust.</p>"
+ },
+ {
+  "id": "25941",
+  "parent": "25863",
+  "author": "Leo Godin",
+  "date": "2015-01-13T09:45:55",
+  "html": "<p>That's what I use. Documentation says it should work, but I haven't tested it. Probably should.  Right now, I have a read-only user account, since I'm only reporting. That keeps me secure... I think.</p>"
+ },
+ {
+  "id": "25953",
+  "parent": "25917",
+  "author": "Szilard",
+  "date": "2015-01-13T10:14:20",
+  "html": "<p>Thanks, Tim.</p>"
+ },
+ {
+  "id": "25956",
+  "parent": "25863",
+  "author": "Szilard",
+  "date": "2015-01-13T10:17:27",
+  "html": "<p>Thanks Steph for pointing this out. I have to try it out with MySQL, but based on the <a href=\"http://cran.r-project.org/web/packages/RODBCext/vignettes/Parameterized_SQL_queries.html\" rel=\"nofollow ugc noopener\">vignette</a> it looks like a great option.</p>"
+ },
+ {
+  "id": "27106",
+  "parent": "0",
+  "author": "Gergely Daróczi",
+  "date": "2015-01-18T06:18:51",
+  "html": "<p>Thanks for mentioning my \"sandboxR\" package, which is indeed a rather POC demo on the security threats running R inside of a web application with arbitrary user inputs. Although maintaining the list is not feasible in the long run with the ever growing number of R packages and frequent version updates, it has its use case in e.g. the Rapporter infrastructure: it can filter malicious calls as the first barrier of security with user-friendly error messages, and RAppArmor can be used to protect your HDD's content. Unfortunately, there's still no solution to filter network access in a smart way, but I hope that AppArmor will provide such solution in the near future: <a href=\"https://bugs.launchpad.net/ubuntu/+source/apparmor/+bug/796588\" rel=\"nofollow ugc noopener\">https://bugs.launchpad.net/ubuntu/+source/apparmor/+bug/796588</a></p>"
+ },
+ {
+  "id": "50479",
+  "parent": "0",
+  "author": "Mike Card",
+  "date": "2015-06-27T19:33:24",
+  "html": "<p>Incidentally, if you're using Postgres, the the \"rpg\" package does support parameterized SQL statements.</p>"
+ },
+ {
+  "id": "50509",
+  "parent": "0",
+  "author": "Szilard",
+  "date": "2015-06-28T09:47:00",
+  "html": "<p>Thanks Mike, someone said that earlier (in the comments) as well.</p>"
+ },
+ {
+  "id": "58709",
+  "parent": "25941",
+  "author": "Bogdan",
+  "date": "2015-10-23T14:55:07",
+  "html": "<p>That's a good question. IS it secure if we just use read-only accounts?</p>"
+ },
+ {
+  "id": "58936",
+  "parent": "58709",
+  "author": "Szilard",
+  "date": "2015-10-28T15:25:33",
+  "html": "<p>Nothing is 100% secure. You should have multiple layers of security as I mention in the 2nd to last paragraph in the post: \"Regardless of how you address this issue, you should also have additional layers of security such as granting minimal privileges to the database user used by the application. For a Shiny app, this means...\"</p>"
+ },
+ {
+  "id": "58937",
+  "parent": "58936",
+  "author": "Szilard",
+  "date": "2015-10-28T15:28:53",
+  "html": "<p>Oh, my bad, I though it's a general question, but now I see it was related to RODBCext. I dunno on that one.</p>"
+ }
+]

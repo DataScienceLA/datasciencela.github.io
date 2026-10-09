@@ -1,0 +1,4 @@
+---
+title: "animate"
+slug: "animate"
+---

@@ -1,0 +1,4 @@
+---
+title: "highcharts"
+slug: "highcharts"
+---

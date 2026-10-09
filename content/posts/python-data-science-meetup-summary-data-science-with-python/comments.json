@@ -1,0 +1,16 @@
+[
+ {
+  "id": "28366",
+  "parent": "0",
+  "author": "Malcolm",
+  "date": "2015-01-22T23:21:59",
+  "html": "<p>Great meeting and good conversations before and after.<br/>\nThanks for organizing it.<br/>\nMalcolm<br/>\nPS - I subsequently used what I got to plot real time (stripchart) data coming from an Arduino.</p>"
+ },
+ {
+  "id": "49019",
+  "parent": "0",
+  "author": "Rutger",
+  "date": "2015-05-19T12:54:54",
+  "html": "<p>As a beginner I wonder if there is a difference between multithreading and multiprocessing? In one video the person said that multiprocessing was better than threading was faster and that threading was not actually multithreading.</p>"
+ }
+]

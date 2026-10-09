@@ -1,0 +1,16 @@
+[
+ {
+  "id": "30",
+  "parent": "0",
+  "author": "Orlando Mezquita",
+  "date": "2014-08-14T19:35:33",
+  "html": "<p>How can I get the code of that presentation?</p>"
+ },
+ {
+  "id": "31",
+  "parent": "30",
+  "author": "Eduardo",
+  "date": "2014-08-14T21:15:13",
+  "html": "<p>I updated the post with a link to a zip file containing the slides as well as the code! Cheers!</p>"
+ }
+]
